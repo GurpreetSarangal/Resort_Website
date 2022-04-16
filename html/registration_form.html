@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Banff Resort</title>
+    <link rel="stylesheet" href="/css/registration_form.css">
+</head>
+<body>
+    <div class="container">
+
+    <form class="form-horizontal" action="#" method=""  id="registration_form">
+    <div class="form_container">
+    <fieldset>
+      <!-- Form Name -->
+      <legend><h2><b>Registration Form</b></h2></legend><br>
+      
+      <!-- Text input-->
+      
+      <div class="form-group">
+        <label class=" control-label" for="first_name">First Name</label>  
+        <div class=" inputGroupContainer">
+          <div class="input-group">
+            <input id="first_name" name="first_name" placeholder="First Name" class="form-control"  type="text">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Text input-->
+      
+      <div class="form-group">
+        <label class=" control-label" for="last_name" >Last Name</label> 
+        <div class=" inputGroupContainer">
+          <div class="input-group">
+            <input id="last_name" name="last_name" placeholder="Last Name" class="form-control"  type="text">
+          </div>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label class=" control-label" for="address" >Complete Address</label> 
+        <div class=" inputGroupContainer">
+          <div class="input-group">
+            <input id="address" name="address" placeholder="Complete Address" class="form-control"  type="text">
+          </div>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label class=" control-label" for="mobile" >Mobile Number</label> 
+        <div class=" inputGroupContainer">
+          <div class="input-group">
+            <input id="mobile" name="mobile" placeholder="Mobile Number" class="form-control"  type="number">
+          </div>
+        </div>
+      </div>
+
+      
+        <div class="form-group"> 
+        <label class="control-label">Business / Personal</label>
+          <div class=" inputGroupContainer">
+            <div class="input-group">
+              <select name="department" class="form-control selectpicker">
+                <option value="">Select your account type</option>
+                <option>Business Account</option>
+                <option>Personal Account</option>
+              </select>
+            </div>
+          </div>
+      </div>
+      
+      <div class="hidden form-group">
+        <label class=" control-label" for="business_phone" >Business Phone</label> 
+        <div class=" inputGroupContainer">
+          <div class="input-group">
+            <input id="business_phone" name="business_phone" placeholder="Business Phone" class="form-control"  type="number">
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden form-group">
+        <label class="hidden control-label" for="business_name" >Business Name</label> 
+        <div class=" inputGroupContainer">
+          <div class="input-group">
+            <input id="business_name" name="business_name" placeholder="Business Name" class="form-control"  type="text">
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden form-group">
+        <label class="hidden control-label" for="no_of_employees" >No. of Employees</label> 
+        <div class=" inputGroupContainer">
+          <div class="input-group">
+            <input id="no_of_employees" name="business_name" placeholder="No. of Employees" class="form-control"  type="number">
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="form-group">
+        <label class=" control-label" for="email" >Email ID</label> 
+        <div class=" inputGroupContainer">
+          <div class="input-group">
+            <input id="email" name="email" placeholder="E-Mail" class="form-control"  type="email">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class=" control-label" for="confirm_email" >Confirm Email ID</label> 
+        <div class=" inputGroupContainer">
+          <div class="input-group">
+            <input id="confirm_email" name="confirm_email" placeholder="Confirm E-Mail" class="form-control"  type="email">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Text input-->
+      
+      <div class="form-group">
+        <label class=" control-label" >Password</label> 
+          <div class=" inputGroupContainer">
+            <div class="input-group">
+              <input name="user_password" placeholder="Password" class="form-control"  type="password">
+            </div>
+        </div>
+      </div>
+      
+      <!-- Text input-->
+      
+      <div class="form-group">
+        <label class=" control-label" >Confirm Password</label> 
+          <div class=" inputGroupContainer">
+            <div class="input-group">
+              <input name="confirm_password" placeholder="Confirm Password" class="form-control"  type="password">
+            </div>
+        </div>
+      </div>
+      
+      <!-- Success message -->
+      <div class="alert alert-success" role="alert" id="success_message">Success!</div>
+      
+      <!-- Button -->
+      <div class="form-group">
+        <label class=" control-label"></label>
+        <div class=""><br>
+          <button type="submit" class="btn btn-warning" >SUBMIT<span class="glyphicon glyphicon-send"></span></button>
+        </div>
+      </div>
+    </fieldset>
+    </div>
+    </form>
+    </div>
+  </div><!-- /.container -->
+</body>
+<script src="/static/js/jquery-3.6.0.min.js"></script>
+<script src="/static/js/jquery.validate.js"></script>
+<script src="/js/registration_form.js"></script>
+</html>

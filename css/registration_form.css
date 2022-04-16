@@ -1,0 +1,46 @@
+#success_message{ display: none;}
+
+.hidden{
+    display: none !important;
+}
+
+.error{
+    color:red;
+    
+}
+
+.container{
+    margin: 2rem 25%;
+    padding: 1rem 3rem;
+}
+
+#registration_form{
+    display: flex;
+    justify-content: center;
+}
+
+.form_container{
+    min-width: 50rem;
+}
+
+.form-group{
+    display: flex;
+
+}
+
+.control-label{
+    width: 25%;
+    margin: 0.3rem 2rem;
+}
+
+.inputGroupContainer{
+    width: 50%;
+    /* max-height: 1rem; */
+}
+
+.input-group{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+}
