@@ -58,19 +58,19 @@
 
       
         <div class="form-group"> 
-        <label class="control-label">Business / Personal</label>
+        <label class="control-label" for="type">Business / Personal</label>
           <div class=" inputGroupContainer">
             <div class="input-group">
-              <select name="department" class="form-control selectpicker">
-                <option value="">Select your account type</option>
-                <option>Business Account</option>
-                <option>Personal Account</option>
+              <select id="type" name="type" class="form-control selectpicker">
+                <option disabled="disabled">Select your account type</option>
+                <option value="1">Personal Account</option>
+                <option value="2">Business Account</option>
               </select>
             </div>
           </div>
       </div>
       
-      <div class="hidden form-group">
+      <div class="hidden form-group for-businesses">
         <label class=" control-label" for="business_phone" >Business Phone</label> 
         <div class=" inputGroupContainer">
           <div class="input-group">
@@ -79,8 +79,8 @@
         </div>
       </div>
 
-      <div class="hidden form-group">
-        <label class="hidden control-label" for="business_name" >Business Name</label> 
+      <div class="hidden form-group for-businesses">
+        <label class="control-label" for="business_name" >Business Name</label> 
         <div class=" inputGroupContainer">
           <div class="input-group">
             <input id="business_name" name="business_name" placeholder="Business Name" class="form-control"  type="text">
@@ -88,8 +88,8 @@
         </div>
       </div>
 
-      <div class="hidden form-group">
-        <label class="hidden control-label" for="no_of_employees" >No. of Employees</label> 
+      <div class="hidden form-group for-businesses">
+        <label class=" control-label" for="no_of_employees" >No. of Employees</label> 
         <div class=" inputGroupContainer">
           <div class="input-group">
             <input id="no_of_employees" name="business_name" placeholder="No. of Employees" class="form-control"  type="number">
@@ -119,10 +119,10 @@
       <!-- Text input-->
       
       <div class="form-group">
-        <label class=" control-label" >Password</label> 
+        <label class=" control-label" for="password" >Password</label> 
           <div class=" inputGroupContainer">
             <div class="input-group">
-              <input name="user_password" placeholder="Password" class="form-control"  type="password">
+              <input id="password" name="password" placeholder="Password" class="form-control"  type="password">
             </div>
         </div>
       </div>
@@ -138,14 +138,21 @@
         </div>
       </div>
       
-      <!-- Success message -->
-      <div class="alert alert-success" role="alert" id="success_message">Success!</div>
+      <div id="captchaBackground">
+        <canvas id="captcha">captcha text</canvas>
+        <input id="textBox" type="text" name="text">
+        <div id="buttons">
+          <button id="refreshButton" >Refresh</button>
+          <button id="checkButton" >Check</button>
+        </div>
+        <span id="output"></span>
+ </div>
       
       <!-- Button -->
       <div class="form-group">
         <label class=" control-label"></label>
         <div class=""><br>
-          <button type="submit" class="btn btn-warning" >SUBMIT<span class="glyphicon glyphicon-send"></span></button>
+          <button type="submit" class="btn btn-warning" >SUBMIT</button>
         </div>
       </div>
     </fieldset>
