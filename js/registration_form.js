@@ -44,10 +44,10 @@ $(document).ready(function() {
         submitHandler: function(form){
             if($("#output").text() == "Correct!"){
                 console.log("ready to be submitted!!");
-                // form.submit();
+                form.submit();
             }
             else{
-                $("#output").text("Please Clear the Catcha first");
+                $("#output").text("Please Clear the Captcha first");
             }
         }
     });
