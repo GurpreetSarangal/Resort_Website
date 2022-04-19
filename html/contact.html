@@ -5,37 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Contact Us</title>
     <!-- cdn of jQery ui control  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- manual css  -->
-    <link rel="stylesheet" href="./header_footer.css">
-    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="../stylesheet/contact.css">
+    <link rel="stylesheet" href="../stylesheet/header_footer.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <body>
         <div class="heading">
     
-            <!-- ----------------- header section --------------------------- -->
-            <header>
+             <!-- ----------------- header section --------------------------- -->
+             <header>
                 <div class="logo">
-                    <h4>Great Gatsy Banff</h4>
+                    <h4>Great Gatsy Bnaff</h4>
                     <h5>Resort</h5>
                 </div>
                 <div class="nav">
                     <div class="navbar">
     
-                        <li><a href="#"> Home</a></li>
-                        <li><a href="#"> About Us</a></li>
-                        <li><a href="#"> Booking</a></li>
-                        <li><a href="#"> Explore Interest</a></li>
-                        <li><a href="#"> Contact Us</a></li>
-                        <li><a href="#"> Our Gallery</a></li>
+                        <li><a href="../index.html"> Home</a></li>
+                        <li><a href="../html/about.html"> About Us</a></li>
+                        <li><a href="../html/booking.html"> Booking</a></li>
+                        <li><a href="../html/interest.html"> Explore Interest</a></li>
+                        <li><a href="../html/contact.html"> Contact Us</a></li>
+                        <li><a href="../html/gallery.html"> Our Gallery</a></li>
                     </div>
                     <div class="buttons">
-                        <button class="btn">login</button>
-                        <button class="btn">Register</button>
+                        <button class="btn"> <a href="../html/loginpage.html" style="text-decoration: none; color: white;">   login </a></button>
+                        <button class="btn"> <a href="../html/registration_form.html" style="text-decoration: none; color: white;">   Register </a></button>
                     </div>
                 </div>
                 <!--   show at 1100px of width  -->
@@ -63,15 +64,15 @@
             </header>
             <!-- --------------- heading seciton ------------ -->
             <div class="linear">
-                <h1 v data-aos="zoom-in" style="transition: 1.5s;">Contact To Great <br> gatsy bnaff resort</h1>
+                <h1 >Contact To Great <br> gatsy bnaff resort</h1>
             </div>
         </div>
 
         <!--  ----------- here contact form is written ----------------- -->
+        <h1 class="h-primary">Contact Form</h1>
         <div class="hidden" id="success-message">
 
         </div>
-
         <form id="contact-form" action="" method="post">
             <div class="input-group">
                 <input type="text" name="first_name" id="first_name" placeholder="First Name" >
@@ -83,13 +84,14 @@
                 <input type="email" name="email" id="email" placeholder="Email-ID" >
             </div>
             <div class="input-group">
-                <textarea name="comments" id="comments" cols="60" rows="5"  placeholder="Your Comments"></textarea>
-            </div>
-            <div class="input-group">
                 <input type="tel" name="phone" id="phone" placeholder="Phone No." >
             </div>
+            <div class="input-group">
+                <textarea name="comments" id="comments" cols="60" rows="5"  placeholder="Your Comments"></textarea>
+            </div>
+           
             <div class="buttons">
-                <button type="submit">Submit</button>
+                <button id="btn" type="submit">Submit</button>
             </div>
         </form>
         
@@ -150,16 +152,21 @@
         </div>
         
     </section>
-    <script src="/static/js/jquery-3.6.0.min.js"></script>
-    <script src="/static/js/jquery.validate.js"></script>
-    <script src="/template/template/template.js"></script>
+
+
+    <!--  -->
+    <script src="../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../scripts/jquery.validate.js"></script>
+    <script src="../scripts/template.js"></script>
+    <script src="../scripts/headerFooter.js"></script>
+
       <!-- script of jQuery  -->
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- here add some js file  -->
     <script src="./headerFooter.js"></script>
     <!-- font awesome kit  -->
     <script src="https://kit.fontawesome.com/404ad60a43.js" crossorigin="anonymous"></script>
-  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>

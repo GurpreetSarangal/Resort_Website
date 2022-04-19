@@ -5,19 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register | Banff Resort</title>
-    <link rel="stylesheet" href="/css/registration_form.css">
+    <link rel="stylesheet" href="../stylesheet/registration_form.css">
+    <link rel="stylesheet" href="../stylesheet/loginpage.css">
+    <link rel="stylesheet" href="../stylesheet/header_footer.css">
 </head>
 <body>
     <div class="container">
 
     <form class="form-horizontal" action="#" method=""  id="registration_form">
-    <div class="form_container">
-    <fieldset>
+      
+    <div class="form_container card" >
+  
       <!-- Form Name -->
-      <legend><h2><b>Registration Form</b></h2></legend><br>
+     <h1 class="h-primary">Registration Form</h1>
       
       <!-- Text input-->
-      
+      <div class="flex">  
+
+
       <div class="form-group">
         <label class=" control-label" for="first_name">First Name</label>  
         <div class=" inputGroupContainer">
@@ -37,7 +42,12 @@
           </div>
         </div>
       </div>
-      
+
+    </div>
+      <!--  -->
+      <div class="flex">
+
+ 
       <div class="form-group">
         <label class=" control-label" for="address" >Complete Address</label> 
         <div class=" inputGroupContainer">
@@ -55,7 +65,7 @@
           </div>
         </div>
       </div>
-
+    </div>
       
         <div class="form-group"> 
         <label class="control-label" for="type">Business / Personal</label>
@@ -69,7 +79,9 @@
             </div>
           </div>
       </div>
-      
+      <div class="flex">
+
+
       <div class="hidden form-group for-businesses">
         <label class=" control-label" for="business_phone" >Business Phone</label> 
         <div class=" inputGroupContainer">
@@ -79,7 +91,7 @@
         </div>
       </div>
 
-      <div class="hidden form-group for-businesses">
+      <div class="hidden form-group for-businesses flex-row">
         <label class="control-label" for="business_name" >Business Name</label> 
         <div class=" inputGroupContainer">
           <div class="input-group">
@@ -87,17 +99,20 @@
           </div>
         </div>
       </div>
-
+    </div>
       <div class="hidden form-group for-businesses">
         <label class=" control-label" for="no_of_employees" >No. of Employees</label> 
         <div class=" inputGroupContainer">
-          <div class="input-group">
+          <div class="input-group width">
             <input id="no_of_employees" name="business_name" placeholder="No. of Employees" class="form-control"  type="number">
           </div>
         </div>
       </div>
       
-      
+      <div class="flex">  
+
+
+      <!--  -->
       <div class="form-group">
         <label class=" control-label" for="email" >Email ID</label> 
         <div class=" inputGroupContainer">
@@ -115,9 +130,11 @@
           </div>
         </div>
       </div>
-      
+    </div>
       <!-- Text input-->
-      
+      <div class="flex">
+
+
       <div class="form-group">
         <label class=" control-label" for="password" >Password</label> 
           <div class=" inputGroupContainer">
@@ -137,13 +154,16 @@
             </div>
         </div>
       </div>
-      
+
+    </div>
+      <!--  -->
+
       <div id="captchaBackground">
         <canvas id="captcha">captcha text</canvas>
         <input id="textBox" type="text" name="text">
         <div id="buttons">
-          <button id="refreshButton" >Refresh</button>
-          <button id="checkButton" >Check</button>
+          <input type="button" id="refreshButton" value="Refresh">
+          <input type="button" id="checkButton" value="Check">
         </div>
         <span id="output"></span>
  </div>
@@ -151,17 +171,18 @@
       <!-- Button -->
       <div class="form-group">
         <label class=" control-label"></label>
-        <div class=""><br>
+        <div class="center"><br>
           <button type="submit" class="btn btn-warning" >SUBMIT</button>
         </div>
       </div>
-    </fieldset>
+  
     </div>
     </form>
     </div>
   </div><!-- /.container -->
 </body>
-<script src="/static/js/jquery-3.6.0.min.js"></script>
-<script src="/static/js/jquery.validate.js"></script>
-<script src="/js/registration_form.js"></script>
+<script src="../scripts/jquery-3.6.0.min.js"></script>
+<script src="../scripts/jquery.validate.js"></script>
+<script src="../scripts/registration_form.js"></script>
+<script src="../scripts/vanilla-tilt.js"></script>
 </html>

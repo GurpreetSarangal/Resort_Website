@@ -45,6 +45,7 @@ $(document).ready(function() {
             if($("#output").text() == "Correct!"){
                 console.log("ready to be submitted!!");
                 form.submit();
+                document.location.replace("/html/loginpage.html")
             }
             else{
                 $("#output").text("Please Clear the Captcha first");
